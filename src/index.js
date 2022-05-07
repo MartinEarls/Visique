@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Test from './test';
+import Visique from './Visique';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Test />
+    <Visique />
   </React.StrictMode>,
   document.getElementById('root')
 );

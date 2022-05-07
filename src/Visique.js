@@ -96,7 +96,7 @@ class DesktopContainer extends Component {
               size='large'
             >
               <Container>
-                <Menu.Item as='a'>Overview</Menu.Item>
+                <Menu.Item as='a' href="#">Overview</Menu.Item>
                 <Menu.Item as='a'>Statistics</Menu.Item>
                 <Menu.Item as='a'>Test Cases</Menu.Item>
               </Container>
@@ -203,7 +203,7 @@ const HomepageLayout = () => (
             <p style={{ fontSize: '1.33em' }}>
             <List bulleted>
                 <List.Item>As useful as MITRE ATT&CK is, it's not always easy to visualize or plan an effective set of test cases for purple team engagements. </List.Item>
-                <List.Item>That is the purpose of Visique, a publicly available repository of test cases, referencing their technical aspects and real life relevancy to help decide which ones to implement in your engagments, going beyond running simple CLI or script based testing.</List.Item>
+                <List.Item>That is the purpose of Visique, a publicly available repository of test cases, referencing their technical aspects and real life relevancy to help plan purple team engagements. Go beyond running simple CLI or script based testing.</List.Item>
                 <List.Item>The test cases will also serve the purpose of documenting known detection bypasses, suggested mitigations, defence strategies as well as focusing in improving the existing test cases.</List.Item>
             </List>
             </p>
@@ -211,18 +211,18 @@ const HomepageLayout = () => (
               Purple Team Test Cases
             </Header>
             <p style={{ fontSize: '1.33em' }}>
-              Test cases focus on documenting payloads mapped back to MITRE ATT&CK techniques, rather than testing a single technique per payload.
-            <br></br><br></br>
-              View associated payloads and practical references for each test case.
-            <br></br><br></br>
-                Document notable detection bypasses against endpoint security controls.
+            <List bulleted>
+                <List.Item>Test cases focus on documenting payloads mapped back to MITRE ATT&CK techniques, rather than testing a single technique per payload.</List.Item>
+                <List.Item>View associated payloads and practical references for each test case.</List.Item>
+                <List.Item>Document notable detection bypasses against endpoint security controls.</List.Item>
+            </List>
             </p>
-            <Header as='h3' style={{ fontSize: '2em' }}>
+            {/* <Header as='h3' style={{ fontSize: '2em' }}>
               Visualise Attack Chain
             </Header>
             <p style={{ fontSize: '1.33em' }}>
-              See how a certain test fits into an overall attack chain with references to real world attacks (where applicable).
-            </p>
+              
+            </p> */}
           </Grid.Column>
           <Grid.Column floated='right' width={6}>
             <Image bordered rounded size='large' src='/images/wireframe/white-image.png' />
@@ -230,7 +230,7 @@ const HomepageLayout = () => (
         </Grid.Row>
         <Grid.Row>
           <Grid.Column textAlign='center'>
-            <Button size='huge'>Check Them Out</Button>
+            <Button size='huge'>Get Started</Button>
           </Grid.Column>
         </Grid.Row>
       </Grid>
